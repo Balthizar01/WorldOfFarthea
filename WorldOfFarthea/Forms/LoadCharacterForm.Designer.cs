@@ -101,6 +101,7 @@
             this.load_Button.Text = "Load";
             this.load_Button.UseVisualStyleBackColor = true;
             this.load_Button.Visible = false;
+            this.load_Button.Click += new System.EventHandler(this.load_Button_Click);
             // 
             // LoadCharacterForm
             // 

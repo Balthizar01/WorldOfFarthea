@@ -47,8 +47,36 @@
             this.class_groupBox = new System.Windows.Forms.GroupBox();
             this.race_groupBox = new System.Windows.Forms.GroupBox();
             this.back_Button = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.luckPlusButton = new System.Windows.Forms.Button();
+            this.luckMinusButton = new System.Windows.Forms.Button();
+            this.charismaPlusButton = new System.Windows.Forms.Button();
+            this.charismaMinusButton = new System.Windows.Forms.Button();
+            this.endurancePlusButton = new System.Windows.Forms.Button();
+            this.enduranceMinusButton = new System.Windows.Forms.Button();
+            this.agilityPlusButton = new System.Windows.Forms.Button();
+            this.agilityMinusButton = new System.Windows.Forms.Button();
+            this.intellectPlusButton = new System.Windows.Forms.Button();
+            this.intellectMinusButton = new System.Windows.Forms.Button();
+            this.strengthMinusButton = new System.Windows.Forms.Button();
+            this.strengthPlusButton = new System.Windows.Forms.Button();
+            this.luckStat = new System.Windows.Forms.Label();
+            this.charismaStat = new System.Windows.Forms.Label();
+            this.enduranceStat = new System.Windows.Forms.Label();
+            this.agilityStat = new System.Windows.Forms.Label();
+            this.intellectStat = new System.Windows.Forms.Label();
+            this.strengthStat = new System.Windows.Forms.Label();
+            this.luck_Label = new System.Windows.Forms.Label();
+            this.charisma_Label = new System.Windows.Forms.Label();
+            this.endurance_Label = new System.Windows.Forms.Label();
+            this.agility_Label = new System.Windows.Forms.Label();
+            this.intellect_Label = new System.Windows.Forms.Label();
+            this.strength_Label = new System.Windows.Forms.Label();
+            this.statPoints_Label = new System.Windows.Forms.Label();
+            this.statPoints = new System.Windows.Forms.Label();
             this.class_groupBox.SuspendLayout();
             this.race_groupBox.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // title_Label
@@ -249,11 +277,294 @@
             this.back_Button.UseVisualStyleBackColor = true;
             this.back_Button.Click += new System.EventHandler(this.back_Button_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.luckPlusButton);
+            this.panel1.Controls.Add(this.luckMinusButton);
+            this.panel1.Controls.Add(this.charismaPlusButton);
+            this.panel1.Controls.Add(this.charismaMinusButton);
+            this.panel1.Controls.Add(this.endurancePlusButton);
+            this.panel1.Controls.Add(this.enduranceMinusButton);
+            this.panel1.Controls.Add(this.agilityPlusButton);
+            this.panel1.Controls.Add(this.agilityMinusButton);
+            this.panel1.Controls.Add(this.intellectPlusButton);
+            this.panel1.Controls.Add(this.intellectMinusButton);
+            this.panel1.Controls.Add(this.strengthMinusButton);
+            this.panel1.Controls.Add(this.strengthPlusButton);
+            this.panel1.Controls.Add(this.luckStat);
+            this.panel1.Controls.Add(this.charismaStat);
+            this.panel1.Controls.Add(this.enduranceStat);
+            this.panel1.Controls.Add(this.agilityStat);
+            this.panel1.Controls.Add(this.intellectStat);
+            this.panel1.Controls.Add(this.strengthStat);
+            this.panel1.Controls.Add(this.luck_Label);
+            this.panel1.Controls.Add(this.charisma_Label);
+            this.panel1.Controls.Add(this.endurance_Label);
+            this.panel1.Controls.Add(this.agility_Label);
+            this.panel1.Controls.Add(this.intellect_Label);
+            this.panel1.Controls.Add(this.strength_Label);
+            this.panel1.Location = new System.Drawing.Point(476, 122);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(312, 222);
+            this.panel1.TabIndex = 19;
+            // 
+            // luckPlusButton
+            // 
+            this.luckPlusButton.Location = new System.Drawing.Point(199, 185);
+            this.luckPlusButton.Name = "luckPlusButton";
+            this.luckPlusButton.Size = new System.Drawing.Size(60, 25);
+            this.luckPlusButton.TabIndex = 23;
+            this.luckPlusButton.Text = "+";
+            this.luckPlusButton.UseVisualStyleBackColor = true;
+            this.luckPlusButton.Click += new System.EventHandler(this.luckPlusButton_Click);
+            // 
+            // luckMinusButton
+            // 
+            this.luckMinusButton.Location = new System.Drawing.Point(133, 185);
+            this.luckMinusButton.Name = "luckMinusButton";
+            this.luckMinusButton.Size = new System.Drawing.Size(60, 25);
+            this.luckMinusButton.TabIndex = 22;
+            this.luckMinusButton.Text = "-";
+            this.luckMinusButton.UseVisualStyleBackColor = true;
+            this.luckMinusButton.Click += new System.EventHandler(this.luckMinusButton_Click);
+            // 
+            // charismaPlusButton
+            // 
+            this.charismaPlusButton.Location = new System.Drawing.Point(199, 150);
+            this.charismaPlusButton.Name = "charismaPlusButton";
+            this.charismaPlusButton.Size = new System.Drawing.Size(60, 25);
+            this.charismaPlusButton.TabIndex = 21;
+            this.charismaPlusButton.Text = "+";
+            this.charismaPlusButton.UseVisualStyleBackColor = true;
+            this.charismaPlusButton.Click += new System.EventHandler(this.charismaPlusButton_Click);
+            // 
+            // charismaMinusButton
+            // 
+            this.charismaMinusButton.Location = new System.Drawing.Point(133, 150);
+            this.charismaMinusButton.Name = "charismaMinusButton";
+            this.charismaMinusButton.Size = new System.Drawing.Size(60, 25);
+            this.charismaMinusButton.TabIndex = 20;
+            this.charismaMinusButton.Text = "-";
+            this.charismaMinusButton.UseVisualStyleBackColor = true;
+            this.charismaMinusButton.Click += new System.EventHandler(this.charismaMinusButton_Click);
+            // 
+            // endurancePlusButton
+            // 
+            this.endurancePlusButton.Location = new System.Drawing.Point(199, 116);
+            this.endurancePlusButton.Name = "endurancePlusButton";
+            this.endurancePlusButton.Size = new System.Drawing.Size(60, 25);
+            this.endurancePlusButton.TabIndex = 19;
+            this.endurancePlusButton.Text = "+";
+            this.endurancePlusButton.UseVisualStyleBackColor = true;
+            this.endurancePlusButton.Click += new System.EventHandler(this.endurancePlusButton_Click);
+            // 
+            // enduranceMinusButton
+            // 
+            this.enduranceMinusButton.Location = new System.Drawing.Point(133, 117);
+            this.enduranceMinusButton.Name = "enduranceMinusButton";
+            this.enduranceMinusButton.Size = new System.Drawing.Size(60, 25);
+            this.enduranceMinusButton.TabIndex = 18;
+            this.enduranceMinusButton.Text = "-";
+            this.enduranceMinusButton.UseVisualStyleBackColor = true;
+            this.enduranceMinusButton.Click += new System.EventHandler(this.enduranceMinusButton_Click);
+            // 
+            // agilityPlusButton
+            // 
+            this.agilityPlusButton.Location = new System.Drawing.Point(199, 80);
+            this.agilityPlusButton.Name = "agilityPlusButton";
+            this.agilityPlusButton.Size = new System.Drawing.Size(60, 25);
+            this.agilityPlusButton.TabIndex = 17;
+            this.agilityPlusButton.Text = "+";
+            this.agilityPlusButton.UseVisualStyleBackColor = true;
+            this.agilityPlusButton.Click += new System.EventHandler(this.agilityPlusButton_Click);
+            // 
+            // agilityMinusButton
+            // 
+            this.agilityMinusButton.Location = new System.Drawing.Point(133, 81);
+            this.agilityMinusButton.Name = "agilityMinusButton";
+            this.agilityMinusButton.Size = new System.Drawing.Size(60, 25);
+            this.agilityMinusButton.TabIndex = 16;
+            this.agilityMinusButton.Text = "-";
+            this.agilityMinusButton.UseVisualStyleBackColor = true;
+            this.agilityMinusButton.Click += new System.EventHandler(this.agilityMinusButton_Click);
+            // 
+            // intellectPlusButton
+            // 
+            this.intellectPlusButton.Location = new System.Drawing.Point(199, 46);
+            this.intellectPlusButton.Name = "intellectPlusButton";
+            this.intellectPlusButton.Size = new System.Drawing.Size(60, 25);
+            this.intellectPlusButton.TabIndex = 15;
+            this.intellectPlusButton.Text = "+";
+            this.intellectPlusButton.UseVisualStyleBackColor = true;
+            this.intellectPlusButton.Click += new System.EventHandler(this.intellectPlusButton_Click);
+            // 
+            // intellectMinusButton
+            // 
+            this.intellectMinusButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.intellectMinusButton.Location = new System.Drawing.Point(133, 47);
+            this.intellectMinusButton.Name = "intellectMinusButton";
+            this.intellectMinusButton.Size = new System.Drawing.Size(60, 25);
+            this.intellectMinusButton.TabIndex = 14;
+            this.intellectMinusButton.Text = "-";
+            this.intellectMinusButton.UseVisualStyleBackColor = true;
+            this.intellectMinusButton.Click += new System.EventHandler(this.intellectMinusButton_Click);
+            // 
+            // strengthMinusButton
+            // 
+            this.strengthMinusButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.strengthMinusButton.Location = new System.Drawing.Point(133, 11);
+            this.strengthMinusButton.Name = "strengthMinusButton";
+            this.strengthMinusButton.Size = new System.Drawing.Size(60, 25);
+            this.strengthMinusButton.TabIndex = 13;
+            this.strengthMinusButton.Text = "-";
+            this.strengthMinusButton.UseVisualStyleBackColor = true;
+            this.strengthMinusButton.Click += new System.EventHandler(this.strengthMinusButton_Click);
+            // 
+            // strengthPlusButton
+            // 
+            this.strengthPlusButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.strengthPlusButton.Location = new System.Drawing.Point(199, 11);
+            this.strengthPlusButton.Name = "strengthPlusButton";
+            this.strengthPlusButton.Size = new System.Drawing.Size(60, 25);
+            this.strengthPlusButton.TabIndex = 12;
+            this.strengthPlusButton.Text = "+";
+            this.strengthPlusButton.UseVisualStyleBackColor = true;
+            this.strengthPlusButton.Click += new System.EventHandler(this.strengthPlusButton_Click);
+            // 
+            // luckStat
+            // 
+            this.luckStat.AutoSize = true;
+            this.luckStat.Location = new System.Drawing.Point(92, 191);
+            this.luckStat.Name = "luckStat";
+            this.luckStat.Size = new System.Drawing.Size(13, 13);
+            this.luckStat.TabIndex = 11;
+            this.luckStat.Text = "5";
+            // 
+            // charismaStat
+            // 
+            this.charismaStat.AutoSize = true;
+            this.charismaStat.Location = new System.Drawing.Point(92, 156);
+            this.charismaStat.Name = "charismaStat";
+            this.charismaStat.Size = new System.Drawing.Size(13, 13);
+            this.charismaStat.TabIndex = 10;
+            this.charismaStat.Text = "5";
+            // 
+            // enduranceStat
+            // 
+            this.enduranceStat.AutoSize = true;
+            this.enduranceStat.Location = new System.Drawing.Point(92, 123);
+            this.enduranceStat.Name = "enduranceStat";
+            this.enduranceStat.Size = new System.Drawing.Size(13, 13);
+            this.enduranceStat.TabIndex = 9;
+            this.enduranceStat.Text = "5";
+            // 
+            // agilityStat
+            // 
+            this.agilityStat.AutoSize = true;
+            this.agilityStat.Location = new System.Drawing.Point(92, 87);
+            this.agilityStat.Name = "agilityStat";
+            this.agilityStat.Size = new System.Drawing.Size(13, 13);
+            this.agilityStat.TabIndex = 8;
+            this.agilityStat.Text = "5";
+            // 
+            // intellectStat
+            // 
+            this.intellectStat.AutoSize = true;
+            this.intellectStat.Location = new System.Drawing.Point(92, 52);
+            this.intellectStat.Name = "intellectStat";
+            this.intellectStat.Size = new System.Drawing.Size(13, 13);
+            this.intellectStat.TabIndex = 7;
+            this.intellectStat.Text = "5";
+            // 
+            // strengthStat
+            // 
+            this.strengthStat.AutoSize = true;
+            this.strengthStat.Location = new System.Drawing.Point(92, 17);
+            this.strengthStat.Name = "strengthStat";
+            this.strengthStat.Size = new System.Drawing.Size(13, 13);
+            this.strengthStat.TabIndex = 6;
+            this.strengthStat.Text = "5";
+            // 
+            // luck_Label
+            // 
+            this.luck_Label.AutoSize = true;
+            this.luck_Label.Location = new System.Drawing.Point(12, 191);
+            this.luck_Label.Name = "luck_Label";
+            this.luck_Label.Size = new System.Drawing.Size(34, 13);
+            this.luck_Label.TabIndex = 5;
+            this.luck_Label.Text = "Luck:";
+            // 
+            // charisma_Label
+            // 
+            this.charisma_Label.AutoSize = true;
+            this.charisma_Label.Location = new System.Drawing.Point(12, 156);
+            this.charisma_Label.Name = "charisma_Label";
+            this.charisma_Label.Size = new System.Drawing.Size(53, 13);
+            this.charisma_Label.TabIndex = 4;
+            this.charisma_Label.Text = "Charisma:";
+            // 
+            // endurance_Label
+            // 
+            this.endurance_Label.AutoSize = true;
+            this.endurance_Label.Location = new System.Drawing.Point(12, 123);
+            this.endurance_Label.Name = "endurance_Label";
+            this.endurance_Label.Size = new System.Drawing.Size(62, 13);
+            this.endurance_Label.TabIndex = 3;
+            this.endurance_Label.Text = "Endurance:";
+            // 
+            // agility_Label
+            // 
+            this.agility_Label.AutoSize = true;
+            this.agility_Label.Location = new System.Drawing.Point(12, 87);
+            this.agility_Label.Name = "agility_Label";
+            this.agility_Label.Size = new System.Drawing.Size(37, 13);
+            this.agility_Label.TabIndex = 2;
+            this.agility_Label.Text = "Agility:";
+            // 
+            // intellect_Label
+            // 
+            this.intellect_Label.AutoSize = true;
+            this.intellect_Label.Location = new System.Drawing.Point(12, 52);
+            this.intellect_Label.Name = "intellect_Label";
+            this.intellect_Label.Size = new System.Drawing.Size(47, 13);
+            this.intellect_Label.TabIndex = 1;
+            this.intellect_Label.Text = "Intellect:";
+            // 
+            // strength_Label
+            // 
+            this.strength_Label.AutoSize = true;
+            this.strength_Label.Location = new System.Drawing.Point(12, 17);
+            this.strength_Label.Name = "strength_Label";
+            this.strength_Label.Size = new System.Drawing.Size(50, 13);
+            this.strength_Label.TabIndex = 0;
+            this.strength_Label.Text = "Strength:";
+            // 
+            // statPoints_Label
+            // 
+            this.statPoints_Label.AutoSize = true;
+            this.statPoints_Label.Location = new System.Drawing.Point(571, 103);
+            this.statPoints_Label.Name = "statPoints_Label";
+            this.statPoints_Label.Size = new System.Drawing.Size(61, 13);
+            this.statPoints_Label.TabIndex = 20;
+            this.statPoints_Label.Text = "Stat Points:";
+            // 
+            // statPoints
+            // 
+            this.statPoints.AutoSize = true;
+            this.statPoints.Location = new System.Drawing.Point(634, 103);
+            this.statPoints.Name = "statPoints";
+            this.statPoints.Size = new System.Drawing.Size(35, 13);
+            this.statPoints.TabIndex = 21;
+            this.statPoints.Text = "label1";
+            // 
             // CharacterCreationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.statPoints);
+            this.Controls.Add(this.statPoints_Label);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.back_Button);
             this.Controls.Add(this.race_groupBox);
             this.Controls.Add(this.class_groupBox);
@@ -269,6 +580,8 @@
             this.class_groupBox.PerformLayout();
             this.race_groupBox.ResumeLayout(false);
             this.race_groupBox.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,5 +608,32 @@
         private System.Windows.Forms.GroupBox class_groupBox;
         private System.Windows.Forms.GroupBox race_groupBox;
         private System.Windows.Forms.Button back_Button;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label luckStat;
+        private System.Windows.Forms.Label charismaStat;
+        private System.Windows.Forms.Label enduranceStat;
+        private System.Windows.Forms.Label agilityStat;
+        private System.Windows.Forms.Label intellectStat;
+        private System.Windows.Forms.Label strengthStat;
+        private System.Windows.Forms.Label luck_Label;
+        private System.Windows.Forms.Label charisma_Label;
+        private System.Windows.Forms.Label endurance_Label;
+        private System.Windows.Forms.Label agility_Label;
+        private System.Windows.Forms.Label intellect_Label;
+        private System.Windows.Forms.Label strength_Label;
+        private System.Windows.Forms.Button luckPlusButton;
+        private System.Windows.Forms.Button luckMinusButton;
+        private System.Windows.Forms.Button charismaPlusButton;
+        private System.Windows.Forms.Button charismaMinusButton;
+        private System.Windows.Forms.Button endurancePlusButton;
+        private System.Windows.Forms.Button enduranceMinusButton;
+        private System.Windows.Forms.Button agilityPlusButton;
+        private System.Windows.Forms.Button agilityMinusButton;
+        private System.Windows.Forms.Button intellectPlusButton;
+        private System.Windows.Forms.Button intellectMinusButton;
+        private System.Windows.Forms.Button strengthMinusButton;
+        private System.Windows.Forms.Button strengthPlusButton;
+        private System.Windows.Forms.Label statPoints_Label;
+        private System.Windows.Forms.Label statPoints;
     }
 }

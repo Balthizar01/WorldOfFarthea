@@ -49,6 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Entities\Character.cs" />
     <Compile Include="Forms\CharacterCreationForm.cs">
       <SubType>Form</SubType>
@@ -61,6 +64,12 @@
     </Compile>
     <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GameScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GameScreen.Designer.cs">
+      <DependentUpon>GameScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\LoadCharacterForm.cs">
       <SubType>Form</SubType>
@@ -77,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GameScreen.resx">
+      <DependentUpon>GameScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoadCharacterForm.resx">
       <DependentUpon>LoadCharacterForm.cs</DependentUpon>

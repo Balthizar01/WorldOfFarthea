@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Newtonsoft.Json;
+using WorldOfFarthea.Forms;
 
 namespace WorldOfFarthea
 {
-    public partial class LoadCharacterForm : Form
+    public partial class LoadCharacterForm : BaseForm
     {
 
         public delegate void FormClosedDelegate();
@@ -31,7 +32,7 @@ namespace WorldOfFarthea
 
             foreach(Character character in characters)
             {
-                loadCharacter_ListBox.Items.Add(character.Name);
+                loadCharacter_ListBox.Items.Add(character);
             }
         }
 
@@ -56,6 +57,19 @@ namespace WorldOfFarthea
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void load_Button_Click(object sender, EventArgs e)
+        {
+            Character selectedCharacter = (Character)loadCharacter_ListBox.SelectedItem;
+
+            GameScreen gameScreen = new GameScreen(selectedCharacter);
+
+            this.Hide();
+            gameScreen.StartPosition = FormStartPosition.CenterScreen;
+            gameScreen.ShowDialog();
+
             this.Close();
         }
     }
