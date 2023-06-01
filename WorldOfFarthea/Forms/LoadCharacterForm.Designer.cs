@@ -33,7 +33,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
+            this.back_Button = new System.Windows.Forms.Button();
+            this.load_Button = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,6 +55,7 @@
             this.loadCharacter_ListBox.Name = "loadCharacter_ListBox";
             this.loadCharacter_ListBox.Size = new System.Drawing.Size(306, 173);
             this.loadCharacter_ListBox.TabIndex = 1;
+            this.loadCharacter_ListBox.SelectedIndexChanged += new System.EventHandler(this.loadCharacter_ListBox_SelectedIndexChanged);
             // 
             // menuStrip1
             // 
@@ -76,26 +78,37 @@
             // exitToolStripMenuItem1
             // 
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(93, 22);
             this.exitToolStripMenuItem1.Text = "Exit";
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
-            // button1
+            // back_Button
             // 
-            this.button1.Location = new System.Drawing.Point(340, 350);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 45);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.back_Button.Location = new System.Drawing.Point(340, 350);
+            this.back_Button.Name = "back_Button";
+            this.back_Button.Size = new System.Drawing.Size(114, 45);
+            this.back_Button.TabIndex = 3;
+            this.back_Button.Text = "Back";
+            this.back_Button.UseVisualStyleBackColor = true;
+            this.back_Button.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // load_Button
+            // 
+            this.load_Button.Location = new System.Drawing.Point(460, 350);
+            this.load_Button.Name = "load_Button";
+            this.load_Button.Size = new System.Drawing.Size(114, 45);
+            this.load_Button.TabIndex = 4;
+            this.load_Button.Text = "Load";
+            this.load_Button.UseVisualStyleBackColor = true;
+            this.load_Button.Visible = false;
             // 
             // LoadCharacterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.load_Button);
+            this.Controls.Add(this.back_Button);
             this.Controls.Add(this.loadCharacter_ListBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
@@ -116,6 +129,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button back_Button;
+        private System.Windows.Forms.Button load_Button;
     }
 }

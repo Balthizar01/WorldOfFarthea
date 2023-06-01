@@ -35,6 +35,13 @@ namespace WorldOfFarthea
             }
         }
 
+        private void loadCharacter_ListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            load_Button.Visible = loadCharacter_ListBox.SelectedIndex != -1;
+            back_Button.Location = new Point(280, 350);
+            load_Button.Location = new Point(400, 350);
+        }
+
         private void exitGameItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
