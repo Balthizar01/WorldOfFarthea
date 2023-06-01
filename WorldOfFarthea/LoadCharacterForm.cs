@@ -14,17 +14,13 @@ namespace WorldOfFarthea
 {
     public partial class LoadCharacterForm : Form
     {
+
+        public delegate void FormClosedDelegate();
+
+        public event FormClosedDelegate FormClosedEvent;
         public LoadCharacterForm()
         {
             InitializeComponent();
-
-            ToolStripMenuItem fileItem = new ToolStripMenuItem("File");
-
-            ToolStripMenuItem exitGameItem = new ToolStripMenuItem("Exit");
-            exitGameItem.Click += new EventHandler(exitGameItem_Click);
-            fileItem.DropDownItems.Add(exitGameItem);
-
-            menuStrip1.Items.Add(fileItem);
 
             string filePath = @"C:\WorldofFarthea\Characters.json";
             List<Character> characters = new List<Character>();
@@ -43,5 +39,13 @@ namespace WorldOfFarthea
         {
             Application.Exit();
         }
+
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            FormClosedEvent?.Invoke();
+        }
+
     }
 }

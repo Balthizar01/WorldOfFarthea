@@ -58,12 +58,28 @@ namespace WorldOfFarthea
 
         private void loadCharacter_Button_Click(object sender, EventArgs e)
         {
+            // Create LoadCharacterForm
             LoadCharacterForm loadCharacterForm = new LoadCharacterForm();
+            loadCharacterForm.FormClosedEvent += LoadCharacterForm_FormClosedEvent;
+
+            // Hide this form
             this.Hide();
+
+            // Set the LoadCharacterForm start position and show it
             loadCharacterForm.StartPosition = FormStartPosition.CenterScreen;
             loadCharacterForm.ShowDialog();
-            
-            this.Show();
+
+            // Show this form only if it's not disposed
+            if (!this.IsDisposed)
+            {
+                this.Show();
+            }
+        }
+
+        private void LoadCharacterForm_FormClosedEvent()
+        {
+            // Close this form
+            this.Close();
         }
     }
 }
