@@ -62,10 +62,8 @@ namespace WorldOfFarthea
             this.Hide();
             loadCharacterForm.StartPosition = FormStartPosition.CenterScreen;
             loadCharacterForm.ShowDialog();
-            if (!isApplicationExit)
-            {
-                this.Show();
-            }
+            
+            this.Show();
         }
     }
 }

@@ -49,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Character.cs" />
+    <Compile Include="Entities\Character.cs" />
     <Compile Include="CharacterCreationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,8 +68,8 @@
     <Compile Include="LoadCharacterForm.Designer.cs">
       <DependentUpon>LoadCharacterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Monster.cs" />
-    <Compile Include="MonsterRepository.cs" />
+    <Compile Include="Entities\Monster.cs" />
+    <Compile Include="Entities\MonsterRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CharacterCreationForm.resx">
