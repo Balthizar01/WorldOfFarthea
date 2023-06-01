@@ -310,7 +310,7 @@
             // 
             // luckPlusButton
             // 
-            this.luckPlusButton.Location = new System.Drawing.Point(199, 185);
+            this.luckPlusButton.Location = new System.Drawing.Point(199, 132);
             this.luckPlusButton.Name = "luckPlusButton";
             this.luckPlusButton.Size = new System.Drawing.Size(60, 25);
             this.luckPlusButton.TabIndex = 23;
@@ -320,7 +320,7 @@
             // 
             // luckMinusButton
             // 
-            this.luckMinusButton.Location = new System.Drawing.Point(133, 185);
+            this.luckMinusButton.Location = new System.Drawing.Point(133, 132);
             this.luckMinusButton.Name = "luckMinusButton";
             this.luckMinusButton.Size = new System.Drawing.Size(60, 25);
             this.luckMinusButton.TabIndex = 22;
@@ -330,7 +330,7 @@
             // 
             // charismaPlusButton
             // 
-            this.charismaPlusButton.Location = new System.Drawing.Point(199, 150);
+            this.charismaPlusButton.Location = new System.Drawing.Point(199, 107);
             this.charismaPlusButton.Name = "charismaPlusButton";
             this.charismaPlusButton.Size = new System.Drawing.Size(60, 25);
             this.charismaPlusButton.TabIndex = 21;
@@ -340,7 +340,7 @@
             // 
             // charismaMinusButton
             // 
-            this.charismaMinusButton.Location = new System.Drawing.Point(133, 150);
+            this.charismaMinusButton.Location = new System.Drawing.Point(133, 107);
             this.charismaMinusButton.Name = "charismaMinusButton";
             this.charismaMinusButton.Size = new System.Drawing.Size(60, 25);
             this.charismaMinusButton.TabIndex = 20;
@@ -350,7 +350,7 @@
             // 
             // endurancePlusButton
             // 
-            this.endurancePlusButton.Location = new System.Drawing.Point(199, 116);
+            this.endurancePlusButton.Location = new System.Drawing.Point(199, 83);
             this.endurancePlusButton.Name = "endurancePlusButton";
             this.endurancePlusButton.Size = new System.Drawing.Size(60, 25);
             this.endurancePlusButton.TabIndex = 19;
@@ -360,7 +360,7 @@
             // 
             // enduranceMinusButton
             // 
-            this.enduranceMinusButton.Location = new System.Drawing.Point(133, 117);
+            this.enduranceMinusButton.Location = new System.Drawing.Point(133, 84);
             this.enduranceMinusButton.Name = "enduranceMinusButton";
             this.enduranceMinusButton.Size = new System.Drawing.Size(60, 25);
             this.enduranceMinusButton.TabIndex = 18;
@@ -370,7 +370,7 @@
             // 
             // agilityPlusButton
             // 
-            this.agilityPlusButton.Location = new System.Drawing.Point(199, 80);
+            this.agilityPlusButton.Location = new System.Drawing.Point(199, 59);
             this.agilityPlusButton.Name = "agilityPlusButton";
             this.agilityPlusButton.Size = new System.Drawing.Size(60, 25);
             this.agilityPlusButton.TabIndex = 17;
@@ -380,7 +380,7 @@
             // 
             // agilityMinusButton
             // 
-            this.agilityMinusButton.Location = new System.Drawing.Point(133, 81);
+            this.agilityMinusButton.Location = new System.Drawing.Point(133, 60);
             this.agilityMinusButton.Name = "agilityMinusButton";
             this.agilityMinusButton.Size = new System.Drawing.Size(60, 25);
             this.agilityMinusButton.TabIndex = 16;
@@ -390,7 +390,7 @@
             // 
             // intellectPlusButton
             // 
-            this.intellectPlusButton.Location = new System.Drawing.Point(199, 46);
+            this.intellectPlusButton.Location = new System.Drawing.Point(199, 35);
             this.intellectPlusButton.Name = "intellectPlusButton";
             this.intellectPlusButton.Size = new System.Drawing.Size(60, 25);
             this.intellectPlusButton.TabIndex = 15;
@@ -401,7 +401,7 @@
             // intellectMinusButton
             // 
             this.intellectMinusButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.intellectMinusButton.Location = new System.Drawing.Point(133, 47);
+            this.intellectMinusButton.Location = new System.Drawing.Point(133, 36);
             this.intellectMinusButton.Name = "intellectMinusButton";
             this.intellectMinusButton.Size = new System.Drawing.Size(60, 25);
             this.intellectMinusButton.TabIndex = 14;
@@ -434,7 +434,7 @@
             // luckStat
             // 
             this.luckStat.AutoSize = true;
-            this.luckStat.Location = new System.Drawing.Point(92, 191);
+            this.luckStat.Location = new System.Drawing.Point(92, 138);
             this.luckStat.Name = "luckStat";
             this.luckStat.Size = new System.Drawing.Size(13, 13);
             this.luckStat.TabIndex = 11;
@@ -443,7 +443,7 @@
             // charismaStat
             // 
             this.charismaStat.AutoSize = true;
-            this.charismaStat.Location = new System.Drawing.Point(92, 156);
+            this.charismaStat.Location = new System.Drawing.Point(92, 113);
             this.charismaStat.Name = "charismaStat";
             this.charismaStat.Size = new System.Drawing.Size(13, 13);
             this.charismaStat.TabIndex = 10;
@@ -452,7 +452,7 @@
             // enduranceStat
             // 
             this.enduranceStat.AutoSize = true;
-            this.enduranceStat.Location = new System.Drawing.Point(92, 123);
+            this.enduranceStat.Location = new System.Drawing.Point(92, 90);
             this.enduranceStat.Name = "enduranceStat";
             this.enduranceStat.Size = new System.Drawing.Size(13, 13);
             this.enduranceStat.TabIndex = 9;
@@ -461,7 +461,7 @@
             // agilityStat
             // 
             this.agilityStat.AutoSize = true;
-            this.agilityStat.Location = new System.Drawing.Point(92, 87);
+            this.agilityStat.Location = new System.Drawing.Point(92, 66);
             this.agilityStat.Name = "agilityStat";
             this.agilityStat.Size = new System.Drawing.Size(13, 13);
             this.agilityStat.TabIndex = 8;
@@ -470,7 +470,7 @@
             // intellectStat
             // 
             this.intellectStat.AutoSize = true;
-            this.intellectStat.Location = new System.Drawing.Point(92, 52);
+            this.intellectStat.Location = new System.Drawing.Point(92, 41);
             this.intellectStat.Name = "intellectStat";
             this.intellectStat.Size = new System.Drawing.Size(13, 13);
             this.intellectStat.TabIndex = 7;
@@ -488,7 +488,7 @@
             // luck_Label
             // 
             this.luck_Label.AutoSize = true;
-            this.luck_Label.Location = new System.Drawing.Point(12, 191);
+            this.luck_Label.Location = new System.Drawing.Point(12, 138);
             this.luck_Label.Name = "luck_Label";
             this.luck_Label.Size = new System.Drawing.Size(34, 13);
             this.luck_Label.TabIndex = 5;
@@ -497,7 +497,7 @@
             // charisma_Label
             // 
             this.charisma_Label.AutoSize = true;
-            this.charisma_Label.Location = new System.Drawing.Point(12, 156);
+            this.charisma_Label.Location = new System.Drawing.Point(12, 113);
             this.charisma_Label.Name = "charisma_Label";
             this.charisma_Label.Size = new System.Drawing.Size(53, 13);
             this.charisma_Label.TabIndex = 4;
@@ -506,7 +506,7 @@
             // endurance_Label
             // 
             this.endurance_Label.AutoSize = true;
-            this.endurance_Label.Location = new System.Drawing.Point(12, 123);
+            this.endurance_Label.Location = new System.Drawing.Point(12, 90);
             this.endurance_Label.Name = "endurance_Label";
             this.endurance_Label.Size = new System.Drawing.Size(62, 13);
             this.endurance_Label.TabIndex = 3;
@@ -515,7 +515,7 @@
             // agility_Label
             // 
             this.agility_Label.AutoSize = true;
-            this.agility_Label.Location = new System.Drawing.Point(12, 87);
+            this.agility_Label.Location = new System.Drawing.Point(12, 66);
             this.agility_Label.Name = "agility_Label";
             this.agility_Label.Size = new System.Drawing.Size(37, 13);
             this.agility_Label.TabIndex = 2;
@@ -524,7 +524,7 @@
             // intellect_Label
             // 
             this.intellect_Label.AutoSize = true;
-            this.intellect_Label.Location = new System.Drawing.Point(12, 52);
+            this.intellect_Label.Location = new System.Drawing.Point(12, 41);
             this.intellect_Label.Name = "intellect_Label";
             this.intellect_Label.Size = new System.Drawing.Size(47, 13);
             this.intellect_Label.TabIndex = 1;

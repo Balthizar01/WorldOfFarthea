@@ -20,13 +20,6 @@ namespace WorldOfFarthea.Forms
             PlayerCharacter = character;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            playerName_Label.Text = PlayerCharacter.Name;
-            playerClass_Label.Text = PlayerCharacter.Health.ToString();
-            PlayerCharacter.Health = 200;
-        }
-
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Character.UpdateCharacter(PlayerCharacter);

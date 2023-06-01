@@ -14,8 +14,9 @@ namespace WorldOfFarthea
         {
             Monsters = new List<Monster>
             {
-                new Monster("Goblin", 100, 20),
-                new Monster("Slime", 50, 5),
+                // Monster(Name, Level, Health, Mana, AttackDamage)
+                new Monster("Goblin", 1, 100, 0, 20),
+                new Monster("Slime", 1, 50, 0, 5),
             };
         }
 

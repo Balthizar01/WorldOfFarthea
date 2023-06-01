@@ -14,12 +14,27 @@ using WorldOfFarthea.Forms;
 
 namespace WorldOfFarthea
 {
-    public partial class CharacterCreationForm : BaseForm
+    public partial class CharacterCreationForm : Form
     {
-        private int statPointsRemaining = 10;
+        private int statPointsRemaining = 5;
         public CharacterCreationForm()
         {
             InitializeComponent();
+
+            // Handlers for race radios
+            humanRace_Radio.CheckedChanged += (s, e) => ResetStatsBasedOnClassRace();
+            elfRace_Radio.CheckedChanged += (s, e) => ResetStatsBasedOnClassRace();
+            dwarfRace_Radio.CheckedChanged += (s, e) => ResetStatsBasedOnClassRace();
+            orcRace_Radio.CheckedChanged += (s, e) => ResetStatsBasedOnClassRace();
+
+            // Handlers for class radios
+            warrior_Radio.CheckedChanged += (s, e) => ResetStatsBasedOnClassRace();
+            paladin_Radio.CheckedChanged += (s, e) => ResetStatsBasedOnClassRace();
+            priest_Radio.CheckedChanged += (s, e) => ResetStatsBasedOnClassRace();
+            hunter_Radio.CheckedChanged += (s, e) => ResetStatsBasedOnClassRace();
+            deathknight_Radio.CheckedChanged += (s, e) => ResetStatsBasedOnClassRace();
+
+
             statPoints.Text = statPointsRemaining.ToString();
 
             ToolStripMenuItem fileItem = new ToolStripMenuItem("File");
@@ -117,7 +132,7 @@ namespace WorldOfFarthea
 
         private void back_Button_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
         }
 
         private void strengthPlusButton_Click(object sender, EventArgs e)
@@ -311,6 +326,243 @@ namespace WorldOfFarthea
             {
                 luckMinusButton.Visible = false;
             }
+        }
+
+        private void ResetStatsBasedOnClassRace()
+        {
+            string chosenRace = "";
+            string chosenClass = "";
+
+            if(warrior_Radio.Checked)
+            {
+                chosenClass = "Warrior";
+            }else if(paladin_Radio.Checked)
+            {
+                chosenClass = "Paladin";
+            }else if (priest_Radio.Checked)
+            {
+                chosenClass = "Priest";
+            }else if (hunter_Radio.Checked)
+            {
+                chosenClass = "Hunter";
+            }else if (deathknight_Radio.Checked)
+            {
+                chosenClass = "Death Knight";
+            }
+            else
+            {
+                chosenClass = "Unknown";
+            }
+
+            if (humanRace_Radio.Checked)
+            {
+                chosenRace = "Human";
+            }else if (elfRace_Radio.Checked)
+            {
+                chosenRace = "Elf";
+            }else if (dwarfRace_Radio.Checked)
+            {
+                chosenRace = "Dwarf";
+            }else if (orcRace_Radio.Checked)
+            {
+                chosenRace = "Orc";
+            }
+            else
+            {
+                chosenRace = "Unknown";
+            }
+
+            int strength = 5, intellect = 5, agility = 5, endurance = 5, charisma = 5, luck = 5;
+
+            switch (chosenRace)
+            {
+                case "Human":
+                    switch(chosenClass){
+                        case "Warrior":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 5;
+                            luck = 4;
+                            break;
+                        case "Paladin":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 5;
+                            luck = 4;
+                            break;
+                        case "Priest":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 5;
+                            luck = 4;
+                            break;
+                        case "Hunter":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 5;
+                            luck = 4;
+                            break;
+                        case "Death Knight":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 4;
+                            luck = 4;
+                            break;
+                    }
+                    break;
+                case "Elf":
+                    switch (chosenClass)
+                    {
+                        case "Warrior":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 5;
+                            luck = 4;
+                            break;
+                        case "Paladin":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 5;
+                            luck = 4;
+                            break;
+                        case "Priest":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 5;
+                            luck = 4;
+                            break;
+                        case "Hunter":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 5;
+                            luck = 4;
+                            break;
+                        case "Death Knight":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 3;
+                            luck = 4;
+                            break;
+                    }
+                    break;
+                case "Dwarf":
+                    switch (chosenClass)
+                    {
+                        case "Warrior":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 5;
+                            luck = 4;
+                            break;
+                        case "Paladin":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 5;
+                            luck = 4;
+                            break;
+                        case "Priest":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 5;
+                            luck = 4;
+                            break;
+                        case "Hunter":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 5;
+                            luck = 4;
+                            break;
+                        case "Death Knight":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 3;
+                            luck = 4;
+                            break;
+                    }
+                    break;
+                case "Orc":
+                    switch (chosenClass)
+                    {
+                        case "Warrior":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 5;
+                            luck = 4;
+                            break;
+                        case "Paladin":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 5;
+                            luck = 4;
+                            break;
+                        case "Priest":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 5;
+                            luck = 4;
+                            break;
+                        case "Hunter":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 5;
+                            luck = 4;
+                            break;
+                        case "Death Knight":
+                            strength = 6;
+                            intellect = 4;
+                            agility = 4;
+                            endurance = 6;
+                            charisma = 3;
+                            luck = 4;
+                            break;
+                    }
+                    break;
+            }
+
+            strengthStat.Text = strength.ToString();
+            intellectStat.Text = intellect.ToString();
+            agilityStat.Text = agility.ToString();
+            enduranceStat.Text = endurance.ToString();
+            charismaStat.Text = charisma.ToString();
+            luckStat.Text = luck.ToString();
         }
     }
 }
