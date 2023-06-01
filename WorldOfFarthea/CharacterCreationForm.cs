@@ -116,5 +116,10 @@ namespace WorldOfFarthea
                 return "Unknown";
             }
         }
+
+        private void back_Button_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

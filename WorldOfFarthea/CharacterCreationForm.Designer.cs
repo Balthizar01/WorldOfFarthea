@@ -46,6 +46,7 @@
             this.orcRace_Radio = new System.Windows.Forms.RadioButton();
             this.class_groupBox = new System.Windows.Forms.GroupBox();
             this.race_groupBox = new System.Windows.Forms.GroupBox();
+            this.back_Button = new System.Windows.Forms.Button();
             this.class_groupBox.SuspendLayout();
             this.race_groupBox.SuspendLayout();
             this.SuspendLayout();
@@ -150,7 +151,7 @@
             // 
             // characterCreation_Submit
             // 
-            this.characterCreation_Submit.Location = new System.Drawing.Point(340, 350);
+            this.characterCreation_Submit.Location = new System.Drawing.Point(392, 350);
             this.characterCreation_Submit.Name = "characterCreation_Submit";
             this.characterCreation_Submit.Size = new System.Drawing.Size(114, 45);
             this.characterCreation_Submit.TabIndex = 10;
@@ -238,11 +239,22 @@
             this.race_groupBox.TabIndex = 17;
             this.race_groupBox.TabStop = false;
             // 
+            // back_Button
+            // 
+            this.back_Button.Location = new System.Drawing.Point(272, 350);
+            this.back_Button.Name = "back_Button";
+            this.back_Button.Size = new System.Drawing.Size(114, 45);
+            this.back_Button.TabIndex = 18;
+            this.back_Button.Text = "Back";
+            this.back_Button.UseVisualStyleBackColor = true;
+            this.back_Button.Click += new System.EventHandler(this.back_Button_Click);
+            // 
             // CharacterCreationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.back_Button);
             this.Controls.Add(this.race_groupBox);
             this.Controls.Add(this.class_groupBox);
             this.Controls.Add(this.characterCreation_Submit);
@@ -282,5 +294,6 @@
         private System.Windows.Forms.RadioButton orcRace_Radio;
         private System.Windows.Forms.GroupBox class_groupBox;
         private System.Windows.Forms.GroupBox race_groupBox;
+        private System.Windows.Forms.Button back_Button;
     }
 }
