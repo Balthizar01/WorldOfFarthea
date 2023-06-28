@@ -74,7 +74,7 @@ namespace WorldOfFarthea
             GameScreen gameScreen = new GameScreen(newCharacter);
             gameScreen.StartPosition = FormStartPosition.Manual;
             gameScreen.Location = this.Location;
-            gameScreen.FormClosed += (s, args) => this.Close();
+            gameScreen.ShowDialog();
             gameScreen.Show();
 
         }

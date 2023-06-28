@@ -65,7 +65,15 @@ namespace WorldOfFarthea
 
         public static void SaveCharacters(List<Character> characters)
         {
-            string filePath = @"C:\WorldofFarthea\Characters.json";
+            string directoryPath = @"C:\WorldofFarthea";
+            string filePath = Path.Combine(directoryPath, "Characters.json");
+
+            if(!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+
             string jsonString = Newtonsoft.Json.JsonConvert.SerializeObject(characters, Newtonsoft.Json.Formatting.Indented);
             File.WriteAllText(filePath, jsonString);
         }

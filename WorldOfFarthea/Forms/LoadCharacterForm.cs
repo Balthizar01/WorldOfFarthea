@@ -15,10 +15,6 @@ namespace WorldOfFarthea
 {
     public partial class LoadCharacterForm : BaseForm
     {
-
-        public delegate void FormClosedDelegate();
-
-        public event FormClosedDelegate FormClosedEvent;
         public LoadCharacterForm()
         {
             InitializeComponent();
@@ -45,14 +41,13 @@ namespace WorldOfFarthea
 
         private void exitGameItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
 
         private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             this.Close();
 
-            FormClosedEvent?.Invoke();
         }
 
         private void button1_Click(object sender, EventArgs e)
